@@ -1,0 +1,65 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+    background: url(bckgrd.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.container::after {
+    background-color: rgb(12, 3, 97);
+    position: absolute;
+    content: "";
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.myform {
+    background-color: rgba(21, 58, 112, 0.8);
+    color: white;
+    font-size: 1.3em;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    padding: 100px;
+    text-align: left;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=number], input[type=email],
+input[type=submit], select, textarea {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type=checkbox], input[type=radio] {
+    transform: scale(1.7);
+}
+
+.header {
+    font-size: 1.5em;
+    color: white;
+    padding: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#submit {
+    cursor: pointer;
+    background-color: rgb(2, 184, 26);
+}
